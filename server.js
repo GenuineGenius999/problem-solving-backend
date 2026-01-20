@@ -225,7 +225,7 @@ app.post("/api/solve", async (req, res) => {
         content: [
           {
             type: "text",
-            text: `Subject: ${subject || "unspecified"}.\nSolve the following problems. Output ONLY professional mathematical formulas, calculations, and results. Use single-letter or single-word variables (e.g., n, a, x, v0, not "Total apples" or "Apples per person"). NO descriptive text, NO step numbers, NO explanations, NO LaTeX markers. Only formulas and results.`,
+            text: `Subject: ${subject || "math"}.\nSolve the following problems. Output ONLY professional mathematical formulas, calculations, and results. Use single-letter or single-word variables (e.g., n, a, x, v0, not "Total apples" or "Apples per person"). NO descriptive text, NO step numbers, NO explanations, NO LaTeX markers. Only formulas and results.`,
           },
         ],
       },
